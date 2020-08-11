@@ -4,7 +4,7 @@ import time
 driver = webdriver.Chrome("E:/chromedriver.exe")
 driver.implicitly_wait(30)
 driver.maximize_window()
-driver.get("https://www.instagram.com/accounts/login/?source=auth_switcher")
+driver.get("https://www.instagram.com/accounts/login/")
 driver.refresh()
 
 username = driver.find_element_by_xpath("//input[@name='username']")
